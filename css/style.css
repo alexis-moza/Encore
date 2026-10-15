@@ -1,3 +1,489 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #0d0a14;   
+    color: #f2eef7;       
+}
+a {
+    color: inherit;           
+    text-decoration: none;
+    margin-left: 20px;
+    nav &:hover{
+        color: #e6007e;
+        
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: #0d0b17;
+    border-bottom: 1px solid #d4af37;
+}
+ 
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    z-index: 1050;
+    background-color: transparent;
+    color: #d4af37
+}
+ 
+nav a,
+nav summary {
+    color: #f2f0f7;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+ 
+nav a:hover,
+nav summary:hover {
+    background-color: transparent !important;
+    color: #d4af37
+}
+ 
+
+.sub {
+    padding: 0.5rem 1.2rem;
+    background: #0c9e7c;
+    border-radius: 999px;
+}
+ 
+.sub:hover {
+    background: #d4af37 !important;
+    color: #0d0b17;
+}
+ 
+/* Menú de categorías */
+nav details {
+    position: relative;
+    z-index: 1050;
+}
+ 
+nav ul {
+    position:absolute;
+    margin: 0.8rem 0 0 ;
+    padding: 0.6rem 0.6rem;
+    list-style: none;
+    background: #15112a;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+}
+ 
+nav li {
+    padding: 0.4rem 0;
+}
+.mz-nav{
+    margin-top: 1%;
+}
+
+.hero {
+    padding: 96px 32px;
+    text-align: center;
+    
+}
+.hero-section{
+    background-image: url("../image/avt.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: auto;
+    justify-content: flex-start;
+    margin-top: -130px;
+    position: relative;
+    z-index: 2;
+    
+}
+    
+.display {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    line-height: 1;
+    margin: 0 0 16px;
+}
+.display span {
+    color: #d4af37;
+}
+.hero p {
+    max-width: 520px;
+    margin: 0 auto;
+    color: #b9b0cc;
+    text-align: center;
+    width: 100%;
+    
+}
+.oculto {
+    display: none !important;
+}
 
 
+
+.title{
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 0 8px #cd9a03;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 8px;
+    
+}
+
+
+.card-events-img {
+    border-radius: 12px;
+    overflow: hidden; 
+    border: 1px solid rgb(88, 87, 94);
+    box-shadow: 5px 0 12px rgba(199, 187, 55, 0.986);
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+
+     &:hover {
+        transform: scale(1.01);
+        transition: linear 0.6s;
+}
+
+.part-superior {
+    display: flex;
+    height: 250px;
+}
+.part-inferior {
+    padding: 16px;
+    background-color: #1a1526;
+
+}
+.moza-tittle-concierto{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+}
+
+.franja-conciert{
+    width: 40px;
+    height: 100%;
+    writing-mode: vertical-lr;
+    background-color: #e6007e;
+    text-align: center;
+    
+}
+.image-event{
+    flex: 1;
+    background-color: white;
+    width: 100px;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.btn-comprar {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+      &:hover {
+        background: #e6a600;
+        transition: linear 0.6s;
+        
+    }
+}
+.moza-tittle-teatro{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+}
+.franja-teatro{
+    width: 40px;
+    height: 100%;
+    writing-mode: vertical-lr;
+    background-color: #0c9e7c;
+    text-align: center;
+}
+.moza-tittle-festival{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+}
+.franja-festival{
+    width: 40px;
+    height: 100%;
+    writing-mode: vertical-lr;
+    background-color: #0c64e8;
+    text-align: center;
+}
+}
+
+.mz-carousel {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+}
+.carousel-item{
+    position: relative;
+
+}
+.mz-text{
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    color: white;
+
+}
+.mz-title{
+    font-size: 30px;
+
+}
+.mz-text p {
+    font-size: 16px;
+
+}
+.mz-text a{
+    display: inline-block;
+    padding: 12px 40px;
+    border: 1px solid white;
+    text-decoration: none;
+    background: white;
+    color:black;
+        &:hover{
+            background-color: #cd9a03;
+    }
+}
+
+
+#carouselStackedIndicators {
+    position: relative;
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 350px;
+    
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 28%;
+    bottom: 0;
+    width: 2%;
+    height: 10%;
+    z-index: 10;
+    background-color: #0d0a14
+
+}
+.carousel-control-prev {
+    left: 0;
+}
+.carousel-control-next {
+    right: 0;
+}
+
+.inscripcion{
+    background-color: #cd9a03;
+    justify-content: space-between;
+    text-align: center;
+    display:flow-root;
+    margin: 0 auto;
+    padding: 0 auto;
+    place-items: center;
+}
+
+
+.footer-container{ 
+    margin-top:60px;
+    background:#0d0b1a;
+    color:#b9b6cc;
+    border-top:2px solid #d4a93a;
+    font-family:"Inter",sans-serif;
+}
+.footer-mz{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px 32px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+    text-align: left;
+}
+.footer-col + .footer-col{
+    padding-left: 30px;
+    border-left: 1px solid #2a2845;
+}
+.footer-col h4{
+    margin:0 0 4px;
+    color: #fff;
+    font-family: "Bebas Neue",sans-serif; 
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    align-items: flex-start;
+    text-align: right;
+}   
+.footer-col a,
+.footer-col span{
+    color: #b9b6cc;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+        a:hover{
+            color: #d4a93a;
+        }
+    }
+.footer-col i{
+    color: #d4a93a;
+    margin-right: 4px;
+}
+.footer-col h4{
+    margin-top: 16px;
+}
+.footer.marca p{
+    margin: 0;
+    max-width: 280px;
+    line-height: 1.6;
+}
+.footer-marca img{
+
+        &:hover{
+            transform: scale(1.04);
+            transition: linear 0.3s;
+    }
+}
+.footer-redes{
+    display: flex;
+    gap: 10px;   
+}
+.footer-redes a{
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #3a3760;
+    border-radius: 70%;
+}
+.footer-redes a i{
+    margin: 0;
+    color: #fff;
+        a:hover{
+            background: #d4a93a;
+            border-color: #d4a93a;
+        i:hover{
+            color:#0d0b1a;
+        }
+}
+}
+.block-mz{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color: #fff !important;
+    font-weight: 600;
+    line-height: 1.4;
+    border: 1px solid #d4a93a;
+    border-radius: 8px;
+}
+.block-mz i{
+    font-size: 1.4rem;
+}
+.block-mz:hover{
+    background: #0c9e7c;
+}
+.footer-fondo{
+    padding: 18px 24px;
+    text-align: center;
+    font-size: .99rem;
+    border-top: 1px solid #2a2845;
+}
+.footer-fondo p{
+    margin: 0;
+}
+@media (max-width:594px){
+  .footer-mz{ grid-template-columns:1fr; }
+}
+
+.enc-modal{
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    padding: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #15112a;
+}
+.enc-modal:target{
+    display: flex;
+
+}
+.enc-modal-fondo{
+    position: absolute;
+    inset: 0;
+}
+.enc-modal-caja{
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding:28px 24px;
+    color: #fff;
+    background: #15112a;
+    border: 1px solid #d4a93a;
+    border-radius: 14px;
+}
+.enc-modal-x{
+    position: absolute;
+    top: 10px;
+    right:14px;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.enc-entrada-tarjet{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 14px;
+    padding: 14px;
+    border-left: 4px solid #d4a93a;
+}
+.enc-entrada-tarjet h3{
+    margin: 0 0 4px;
+    font-size: 1.1rem;
+}
+.enc-entrada-tarjet p{
+    margin: 2px 0;
+    font-size: .9rem;
+}
+.enc-entrada-tarjet strong{
+    color: #d4a93a;
+}
+.enc-confirm{
+    color: #4fd6b0;
+    font-size: .8rem;
+    white-space: nowrap;
+}
+.enc-cerrar{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+}
