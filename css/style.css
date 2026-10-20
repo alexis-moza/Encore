@@ -108,13 +108,13 @@ nav li {
     
 }
     
-.display {
+.text-tittle-inicio {
     font-family: "Bebas Neue", sans-serif;
     font-size: clamp(2.5rem, 10vw, 5rem);
     line-height: 1;
     margin: 0 0 16px;
 }
-.display span {
+.text-tittle-inicio span {
     color: #d4af37;
 }
 .hero p {
@@ -125,12 +125,6 @@ nav li {
     width: 100%;
     
 }
-.oculto {
-    display: none !important;
-}
-
-
-
 .title{
     justify-content: space-between;
     text-align: center;
@@ -181,13 +175,12 @@ nav li {
 }
 .image-event{
     flex: 1;
-    background-color: white;
     width: 100px;
     height: 250px;
     object-fit: cover;
 
 }
-
+}
 .btn-comprar {
     display: inline-block;
     padding: 8px 16px;
@@ -224,13 +217,6 @@ nav li {
     writing-mode: vertical-lr;
     background-color: #0c64e8;
     text-align: center;
-}
-}
-
-.mz-carousel {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
 
 }
 .carousel-item{
@@ -245,7 +231,7 @@ nav li {
 
 }
 .mz-title{
-    font-size: 30px;
+    font-size: 2.3rem;
 
 }
 .mz-text p {
@@ -280,10 +266,10 @@ nav li {
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
-    top: 28%;
+    top: 32%;
     bottom: 0;
-    width: 2%;
-    height: 10%;
+    width: 1%;
+    height: 6%;
     z-index: 10;
     background-color: #0d0a14
 
@@ -304,8 +290,9 @@ nav li {
     padding: 0 auto;
     place-items: center;
 }
-
-
+.oculto {
+    display: none !important;
+}
 .footer-container{ 
     margin-top:60px;
     background:#0d0b1a;
@@ -346,10 +333,7 @@ nav li {
     text-decoration: none;
     padding: 0;
     margin: 0;
-        a:hover{
-            color: #d4a93a;
-        }
-    }
+}
 .footer-col i{
     color: #d4a93a;
     margin-right: 4px;
@@ -384,13 +368,6 @@ nav li {
 .footer-redes a i{
     margin: 0;
     color: #fff;
-        a:hover{
-            background: #d4a93a;
-            border-color: #d4a93a;
-        i:hover{
-            color:#0d0b1a;
-        }
-}
 }
 .block-mz{
     display: flex;
